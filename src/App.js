@@ -5,8 +5,8 @@ import './styles/main.scss'; // Importa los estilos desde el archivo main.scss
 // Definición del componente funcional App
 const App = () => (
   <div className="App">
-    <h1>Convertidor de Unidades</h1> // Título de la aplicación
-    <Converter /> // Renderiza el componente Converter
+    <h1>Convertidor de Unidades</h1> {/* Título de la aplicación */}
+    <Converter /> {/*  Renderiza el componente Converter */}
   </div>
 );
 
