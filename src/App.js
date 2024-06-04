@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // Importa la biblioteca de React
+import Converter from './components/converter'; // Importa el componente Converter desde la carpeta components
+import './styles/main.scss'; // Importa los estilos desde el archivo main.scss
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// Definición del componente funcional App
+const App = () => (
+  <div className="App">
+    <h1>Convertidor de Unidades</h1> // Título de la aplicación
+    <Converter /> // Renderiza el componente Converter
+  </div>
+);
 
-export default App;
+export default App; // Exporta el componente App para que pueda ser utilizado en otras partes de la aplicación

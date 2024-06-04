@@ -1,3 +1,14 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"]
+  // Configuración de presets para Babel
+  // Los presets son conjuntos predefinidos de plugins que Babel utiliza para transformar el código.
+  // En este caso, estamos especificando dos presets que Babel utilizará al transpilar nuestro código.
+
+  "presets": [
+    // @babel/preset-env es un preset que permite a Babel compilar el código JavaScript moderno
+    // a una versión compatible con los navegadores específicos definidos en nuestra configuración.
+    "@babel/preset-env",
+
+    // @babel/preset-react es un preset que permite a Babel compilar código JSX a JavaScript estándar.
+    "@babel/preset-react"
+  ]
 }

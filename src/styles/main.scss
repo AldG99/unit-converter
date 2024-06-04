@@ -1,0 +1,81 @@
+@import './variables'; // Importa las variables definidas en otro archivo SCSS
+
+body {
+  font-family: $font-stack; // Aplica la pila de fuentes definida
+  background-color: $primary-color; // Aplica el color de fondo primario
+  color: white; // Define el color del texto como blanco
+  display: flex; // Utiliza flexbox para el layout
+  justify-content: center; // Centra el contenido horizontalmente
+  align-items: center; // Centra el contenido verticalmente
+  height: 100vh; // Altura de la ventana gráfica
+  margin: 0; // Elimina el margen por defecto
+
+  // Media query para pantallas pequeñas
+  @media (max-width: $breakpoint-small) {
+    font-size: 14px; // Ajusta el tamaño de la fuente
+    height: auto; // Ajusta la altura automáticamente
+    padding: 20px; // Añade padding alrededor del body
+  }
+
+  // Media query para pantallas medianas
+  @media (min-width: $breakpoint-medium) {
+    font-size: 16px; // Ajusta el tamaño de la fuente
+  }
+
+  // Media query para pantallas grandes
+  @media (min-width: $breakpoint-large) {
+    font-size: 18px; // Ajusta el tamaño de la fuente
+  }
+}
+
+.converter {
+  display: flex; // Utiliza flexbox para el layout
+  flex-direction: column; // Coloca los elementos en una columna
+  align-items: center; // Centra los elementos horizontalmente
+
+  // Estilos para input y select dentro de .converter
+  input, select {
+    margin: 0.5rem; // Añade margen alrededor
+    padding: 0.5rem; // Añade padding interno
+    border: none; // Elimina el borde por defecto
+    border-radius: 5px; // Redondea las esquinas
+
+    // Media query para pantallas pequeñas
+    @media (max-width: $breakpoint-small) {
+      width: 100%; // Ancho completo
+      font-size: 14px; // Ajusta el tamaño de la fuente
+    }
+
+    // Media query para pantallas medianas
+    @media (min-width: $breakpoint-medium) {
+      width: 80%; // Ancho del 80%
+      font-size: 16px; // Ajusta el tamaño de la fuente
+    }
+
+    // Media query para pantallas grandes
+    @media (min-width: $breakpoint-large) {
+      width: 60%; // Ancho del 60%
+      font-size: 18px; // Ajusta el tamaño de la fuente
+    }
+  }
+
+  // Estilos para span dentro de .converter
+  span {
+    margin: 1rem; // Añade margen alrededor
+
+    // Media query para pantallas pequeñas
+    @media (max-width: $breakpoint-small) {
+      font-size: 14px; // Ajusta el tamaño de la fuente
+    }
+
+    // Media query para pantallas medianas
+    @media (min-width: $breakpoint-medium) {
+      font-size: 16px; // Ajusta el tamaño de la fuente
+    }
+
+    // Media query para pantallas grandes
+    @media (min-width: $breakpoint-large) {
+      font-size: 18px; // Ajusta el tamaño de la fuente
+    }
+  }
+}
